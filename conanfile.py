@@ -37,3 +37,9 @@ conan_basic_setup()""")
         shutil.move("conanbuildinfo.cmake", "build/")
         cmake.configure(source_folder="sources", build_folder="build")
         cmake.install()
+
+    def package_info(self):
+        try:
+            shutil.move("lib64", "lib")
+        except Exception:
+            pass
