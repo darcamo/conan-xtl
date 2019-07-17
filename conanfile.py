@@ -6,7 +6,7 @@ import shutil
 
 class XtlConan(ConanFile):
     name = "xtl"
-    version = "0.4.12"
+    version = "0.6.4"
     license = "BSD-3"
     url = "https://github.com/darcamo/conan-xtl"
     description = "Basic tools (containers, algorithms) used by other quantstack packages"
@@ -15,8 +15,8 @@ class XtlConan(ConanFile):
     generators = "cmake"
     # No settings/options are necessary, this is header only
 
-    def requirements(self):
-        self.requires("nlohmann-json/3.1.2@darcamo/stable")
+    # def requirements(self):
+    #     self.requires("nlohmann-json/[>=3.1.2]@darcamo/stable")
 
     def source(self):
         '''retrieval of the source code here. Remember you can also put the code
