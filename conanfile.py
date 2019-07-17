@@ -6,7 +6,7 @@ import shutil
 
 class XtlConan(ConanFile):
     name = "xtl"
-    version = "0.6.4"
+    version = "0.6.5"
     license = "BSD-3"
     url = "https://github.com/darcamo/conan-xtl"
     description = "Basic tools (containers, algorithms) used by other quantstack packages"
